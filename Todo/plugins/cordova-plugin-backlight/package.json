@@ -1,0 +1,60 @@
+{
+  "_from": "cordova-plugin-backlight",
+  "_id": "cordova-plugin-backlight@0.0.1",
+  "_inBundle": false,
+  "_integrity": "sha1-7mC7emlrv/gN+mGKQnzg0EsnWS0=",
+  "_location": "/cordova-plugin-backlight",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-backlight",
+    "name": "cordova-plugin-backlight",
+    "escapedName": "cordova-plugin-backlight",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-backlight/-/cordova-plugin-backlight-0.0.1.tgz",
+  "_shasum": "ee60bb7a696bbff80dfa618a427ce0d04b27592d",
+  "_spec": "cordova-plugin-backlight",
+  "_where": "/home/am-n4/RemainderApp/Todo",
+  "author": {
+    "name": "Guillaume Royer"
+  },
+  "bugs": {
+    "url": "https://github.com/mebibou/cordova-plugin-backlight/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-backlight",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova Screen Backlight Plugin",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.9.1"
+    }
+  ],
+  "homepage": "https://github.com/mebibou/cordova-plugin-backlight",
+  "keywords": [
+    "cordova",
+    "cordova-android",
+    "ecosystem:cordova"
+  ],
+  "license": "Apache 2.0",
+  "name": "cordova-plugin-backlight",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mebibou/cordova-plugin-backlight.git"
+  },
+  "version": "0.0.1"
+}

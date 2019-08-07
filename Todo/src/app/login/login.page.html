@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar color=primary>
+    <ion-title >Task Tracker 
+
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card style="margin-top: 2cm">
+    <form [formGroup]="userData">
+  
+     
+      <ion-item>
+        <ion-card-title color="primary" >{{login}}</ion-card-title>
+        <ion-icon (click)="onClick()" *ngIf=dis  name="person-add" style="margin-left:7cm"></ion-icon>
+        <ion-icon (click)="onClick()" style="margin-left:auto" *ngIf=dis2  name="arrow-round-back"></ion-icon>
+      </ion-item>
+          
+      
+  
+    <ion-card-content>
+      <ion-item>
+          <ion-icon name="contact" padding></ion-icon>
+         <ion-input formControlName="userName" color="dark" placeholder="User Name" inputmode=text></ion-input>
+        
+      </ion-item>
+
+      <ion-item>
+          <ion-icon name="finger-print" padding></ion-icon>
+          <ion-input formControlName="password" type="password" color="dark" placeholder="Password" inputmode="password"></ion-input>
+         
+       </ion-item>
+
+       <ion-item *ngIf=dis2>
+          <ion-icon  name="finger-print" padding></ion-icon>
+          <ion-input formControlName="password2" type="password" clear-input="clear" color="dark" placeholder="Confirm Password" inputmode=text></ion-input>
+         
+       </ion-item>
+  
+    
+          <ion-button  (click)="onSubmit()" style="margin:auto; margin-bottom: 20px;margin-left:5cm"  color="primary" padding>{{login}}</ion-button>
+      
+      
+<!-- {{userData.value | json}} -->
+    </ion-card-content>
+  </form>
+  </ion-card>
+</ion-content>
+
+

@@ -1,0 +1,125 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Edit Task</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="editForm">
+
+    <ion-row  style="background-color:rgb(190, 184, 184)">
+      <ion-col size="4">
+        <ion-item >
+          <ion-label> Name </ion-label>
+        </ion-item>
+      </ion-col>
+      <ion-col size="7">
+        <ion-item>:
+          <ion-input formControlName="taskName"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    
+
+
+    <ion-row  style="background-color:rgb(206, 197, 197)">
+      <ion-col size="4">
+          <ion-item>
+            <ion-label> Description </ion-label>
+          </ion-item>
+        </ion-col>
+        <ion-col size="7">
+          <ion-item>:
+              <ion-input formControlName="taskDescription"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row  style="background-color:rgb(190, 184, 184)">
+
+        <ion-col size="4">
+          <ion-item>
+            <ion-label> Start Date </ion-label>
+          </ion-item>
+        </ion-col>
+        <ion-col size="7">
+          <ion-item>:
+              <ion-input type="Date" formControlName="taskDate"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row  style="background-color:rgb(206, 197, 197)">
+        <ion-col size="4">
+          <ion-item>
+            <ion-label>End Date </ion-label>
+          </ion-item>
+        </ion-col>
+        <ion-col size="7">
+          <ion-item>:
+              <ion-input type="Date" formControlName="taskEndDate"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <!-- <ion-row  style="background-color:rgb(241, 199, 199)">
+          <ion-col size="4">
+            <ion-item>
+              <ion-label>Favourite </ion-label>
+            </ion-item>
+          </ion-col>
+          <ion-col size="7">
+            <ion-item>:
+                <ion-input type="boolean" formControlName="fav"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row> -->
+          
+        <ion-row  style="background-color:rgb(190, 184, 184)">
+          <ion-col size="4">
+                <ion-item>
+                  <ion-label>Start Time </ion-label>
+                </ion-item>
+              </ion-col>
+              <ion-col size="7">
+                <ion-item>:
+                    <ion-datetime formControlName="taskStartTime" display-format="h:mm A" picker-format="h:mm A" ></ion-datetime>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+
+            <ion-row  style="background-color:rgb(206, 197, 197)">
+              <ion-col size="4">
+                  <ion-item>
+                    <ion-label>End Time </ion-label>
+                  </ion-item>
+                </ion-col>
+                <ion-col size="7">
+                  <ion-item>:
+                    <ion-datetime formControlName="taskEndTime" display-format="h:mm A" picker-format="h:mm A" ></ion-datetime>
+    
+                  </ion-item>
+                </ion-col>
+              </ion-row>
+
+              <ion-row  style="background-color:rgb(190, 184, 184)">
+                <ion-col size="4">
+                    <ion-item>
+                      <ion-label>Notify </ion-label>
+                    </ion-item>
+                  </ion-col>
+                  <ion-col size="7">
+                    <ion-item>:
+                        <ion-toggle formControlName="taskNotify" (click)="onNotify()" color="medium"></ion-toggle>
+                        
+                    </ion-item>
+                  </ion-col>
+                </ion-row>
+   
+         <ion-button (click)="OnEdit()" padding>Update</ion-button>
+  
+  </form>
+
+  <!-- {{editForm.value|json}} -->
+</ion-content>

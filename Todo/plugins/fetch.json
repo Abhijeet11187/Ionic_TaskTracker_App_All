@@ -1,0 +1,34 @@
+{
+  "cordova-plugin-calendar": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-calendar@5.1.4"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-flashlight": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-flashlight"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-backlight": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-backlight"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-email-composer": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-email-composer"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}

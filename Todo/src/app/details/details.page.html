@@ -1,0 +1,89 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Task Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-row>
+      <ion-col size="6">
+        Name :
+      </ion-col>
+      <ion-col size="6">
+        : {{task.taskName}}
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        Description
+      </ion-col>
+      <ion-col size="6">
+        : {{task.taskDescription}}
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        Date
+      </ion-col>
+      <ion-col size="6">
+        : {{task.taskDate}}
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        Favourite
+      </ion-col>
+      <ion-col size="6">
+        : {{task.fav}}
+      </ion-col>
+    </ion-row>
+
+
+
+    <ion-row>
+        <ion-col size="6">
+            End Date
+        </ion-col>
+        <ion-col size="6">
+           : {{task.taskEndDate}}
+              </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col size="6">
+              Notification
+          </ion-col>
+          <ion-col size="6">
+             : {{task.taskNotify}}
+                </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col size="6">
+               Start Time
+            </ion-col>
+            <ion-col size="6">
+               : {{task.taskStartTime}}
+                  </ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col size="6">
+                  End Time
+              </ion-col>
+              <ion-col size="6">
+                 : {{task.taskEndTime}}
+                    </ion-col>
+            </ion-row>
+
+
+
+
+
+  </ion-card>
+<ion-button *ngIf="showMailButton" (click)="getMailID()" padding>Email Task</ion-button>
+
+<ion-card *ngIf="!showMailButton" padding>
+ <ion-item> <ion-input placeholder="Enter Mail" [(ngModel)]="EmailSend" ></ion-input></ion-item>
+  <ion-button (click)="sendMail()" style="margin-left: 4cm" padding >Open In Gmail</ion-button>
+</ion-card>
+
+</ion-content>
